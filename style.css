@@ -1,0 +1,909 @@
+.estrutura{
+  background-color: rgb(240, 240, 240);
+  display: grid;
+  grid-template-columns: minmax(13rem, 18rem ) minmax(500px , 1fr) ;
+ grid-template-areas: 
+   "header main "
+   "header  main ";
+}
+
+body{
+  overflow-x: hidden !important;
+}
+
+.main{
+  max-width: 1200px;
+  padding-top: 40px;
+  padding-left: 40px;
+  grid-area: main;
+  
+}
+
+.header{
+  background-color: white;
+  position: relative;
+  grid-area: header;
+  
+}
+
+
+
+:root{
+  --techblue: rgb(7, 114, 255);
+
+}
+
+.container-nav{
+  
+  width: 200px;
+  margin: 4.5rem auto;
+}
+
+.logo{
+  text-align: center;
+  color: var(--techblue);
+  font-size: 24px;
+  padding: 10px;
+  
+}
+
+.logo h1:hover{
+text-shadow: 2px 2px 1px  rgb(12, 102, 238);
+cursor: pointer;
+}
+
+
+.icon-circle-up{
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  color: rgb(114, 108, 108);
+  font-size: 25px;
+ /* transform: rotate(90deg);*/
+ cursor: pointer;
+}
+
+.icon-circle-up span:hover{
+  color: var(--techblue);
+  }
+
+.icon-circle-up:hover{
+  color: var(--techblue);
+  }
+
+.icon-circle-up span{
+  font-size: 25px;
+  color: gray;
+}
+
+.header nav{
+  width: 150px;
+  margin: 0 auto;
+}
+
+.header nav ul{
+  list-style: none;
+}
+
+.header nav ul li{
+  margin-top: 35px;
+}
+
+.header nav ul li::before:hover{
+ content: '';
+ width: 5px;
+ height: 2px;
+  color: red;
+ background-color: red;
+}
+
+.header nav ul li span{
+  margin-left: -30px;
+  margin-right: 10px;
+ color: var(--techblue);
+  font-size: 30px;
+}
+
+.header nav ul li  a {
+  color: gray;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Merriweather;
+}
+
+.navList li a{
+  position: relative;
+}
+
+nav ul li a:hover{
+  color: var(--techblue);
+  }
+  
+  nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0a8afac4;
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+
+
+.pesquisar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.13);
+
+}
+
+.search-container{
+  padding: 10px;
+  
+}
+
+.search-container input{
+  border-radius: 10px;
+  border: 2px rgba(128, 128, 128, 0.637) solid;
+  padding: 10px 0px 10px 10px;
+  width: 258px;
+  position: relative;
+
+  
+}
+
+
+.user-notification{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 15px;
+  cursor: pointer;
+  
+}
+
+.user-notification div{
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+img{
+  width: 50px;
+  clip-path: circle(50%);
+}
+
+.user-notification::before{
+content: '';
+width: 12px;
+height: 12px;
+background-color: yellow;
+position: absolute;
+top: 10px;
+left: 20px;
+clip-path: circle(50%);
+z-index: 1;
+}
+
+.icon-bell{
+  font-size: 30px;
+  transform: rotate(25deg);
+  position: relative;
+  color: rgb(54, 52, 52);
+  transition: 0.2s;
+}
+
+.icon-bell:hover{
+  transform: rotate(52deg);
+}
+
+.Info{
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  flex: 1 1 200px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.13);
+  
+  
+}
+
+.grid{
+  gap: 20px;
+}
+
+.card-info{
+  display: flex;
+ align-items: center;
+
+  
+}
+
+.icon-home{
+  margin-right: 10px;
+  margin-left: 20px;
+  font-size: 30px;
+  color: var(--techblue);
+  
+}
+
+.icon-users{
+  margin-right: 10px;
+  margin-left: 20px;
+  font-size: 30px;
+  color: var(--techblue);
+}
+
+.icon-file-text2{
+  margin-right: 10px;
+  margin-left: 20px;
+  font-size: 30px;
+  color: var(--techblue);
+}
+
+.icon-library{
+  margin-right: 10px;
+  margin-left: 20px;
+  font-size: 30px;
+  color: var(--techblue);
+}
+
+.card p {
+  color: var(--techblue);
+  font-family: Merriweather;
+  text-align: center;
+}
+
+.title-h2 h2{
+  font-size: 18px;
+  font-family: Merriweather;
+}
+
+.dollar{
+  width: 200px;
+}
+
+.relatorio{
+  background-color: white;
+  margin-top: 35px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.13);
+  height: 500px;
+ 
+}
+
+.vendas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.vendas h2{
+  margin-left: 20px;
+}
+
+.vendas-ano{
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.vendas-ano p  {
+  margin-right: 50px;
+  font-family: Merriweather;
+  
+}
+
+
+.p1{
+  position: relative;
+}
+
+.p1::before{
+  content: '';
+width: 40px;
+background-color: var(--techblue);
+padding: 2px;
+left: -45px;
+top: 12px;
+position: absolute;
+clip-path: circle(50%);
+z-index: 1;
+}
+
+.p2{
+  position: relative;
+}
+
+.p2::before{
+  content: '';
+  width: 40px;
+  background-color: var(--techblue);
+  padding: 2px;
+  left: -45px;
+  top: 12px;
+  position: absolute;
+  clip-path: circle(50%);
+  z-index: 1;
+}
+
+
+
+
+.relatorio-canvas{
+  margin-left: 20px;
+  padding-bottom: 10px;
+  height: 423px;
+  
+}
+
+.canvas p {
+  color: gray;
+}
+
+.anos{
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+}
+
+
+.vendas-semanal{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  
+}
+.info-vendas{
+  display: flex;
+  gap: 9rem;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.info-vendas p {
+  margin: 0px 15px 0px 15px;
+  font-family: Merriweather;
+  color: black;
+  
+}
+
+.vendas-canvas{
+  margin-left: 20px;
+  height: 253px;
+  
+}
+
+.meses-vendas{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card1{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.13);
+  margin-right: 5px;
+  height: 300px;
+}
+
+.card2{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.13);
+}
+.title-pedidos{
+text-align: start;
+background-color: white;
+padding: 0.1px;
+border-radius: 5px;
+margin-left: 10px;
+}
+
+.pedidos{
+  text-align: center;
+  margin-top: 35px;
+  background-color: rgba(255, 255, 255, 0.979);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  margin-bottom: 35px;
+  
+}
+
+
+.table{
+ width: 100%;
+ border-collapse: collapse;
+}
+
+.info-request{
+  background-color: rgb(245, 245, 245);
+   
+}
+
+.info-request th{
+  padding: 16px;
+  border: 0;
+ 
+}
+
+
+
+.table tr td, .table tr th{
+  border-top: solid 1px rgba(128, 128, 128, 0.479);
+  font-family: Merriweather;
+  font-size: 13px;
+  color: rgb(97, 94, 94);
+  
+}
+
+.table img{
+  margin-right: 10px;
+  margin-left: 5px;
+
+}
+
+.td-img{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  
+}
+
+.item th{
+  border-top: none !important;
+}
+
+.item th{
+  padding: 10px;
+}
+
+.icon-pencil{
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
+.icon-pencil:hover::before{
+  color: var(--techblue);
+  
+}
+
+.icon-bin2{
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
+.icon-bin2:hover::before{
+  color: rgba(255, 0, 0, 0.836);
+  
+}
+
+
+.mobile-menu div{
+width: 32px;
+height: 2px;
+background: var(--techblue);
+margin: 8px;
+transition: 0.3s;
+}
+
+.mobile-menu{
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1448px){
+  
+
+  .estrutura{
+    grid-template-columns: minmax(0px, 1fr ) minmax(0px , 1fr) ;
+   grid-template-areas: 
+    "header header"
+    "main main"
+    
+    ;
+  }
+
+  .header nav ul li span {
+    font-size: 20px;
+  }
+
+  #myChart{
+    width: 100% !important;
+  }
+
+  .main{
+    padding-left: 5px;
+    padding-top: 5px;
+    margin: 0 auto;
+  }
+
+  .icon-circle-up{
+    display: none;
+    position: fixed;
+    transition: 0.2s;
+  }
+
+  
+  .icon-search{
+    top: 179px;
+    left: 135px;
+  }
+
+
+  .container-nav{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+
+  .container-nav nav ul{
+    display: flex;
+    margin-right: 25px;
+  }
+
+  .nav{
+    margin: 0 !important;
+    width: auto !important;
+  }
+  .container-nav nav ul li{
+    margin-top: 16px;
+  }
+
+  .container-nav nav ul li a{
+    padding: 10px;
+    font-size: 17px;
+    margin-right: 50px;
+  }
+ 
+
+  .vendas-semanal{
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 1164px){
+  #myChart2{
+    /*width: 885px;*/
+    max-width: 100%;
+  }
+
+  #myChart3{
+    /*width: 885px;*/
+    max-width: 100%;
+  }
+  
+  .Info{
+    flex-wrap: wrap !important;
+  }
+
+  .card1{
+    margin: 0 auto;
+  }
+  
+
+  .card2{
+    margin: 0 auto;
+  }
+
+  .relatorio{
+    margin: 35px auto;
+    /* width: 84%; */
+    max-width: 100%;
+  }
+
+  
+}
+
+
+@media (max-width: 1117px){
+  .card2{
+    margin: 35px auto;
+  }
+}
+
+
+@media (max-width: 1024px){
+  .navList{
+    position: fixed;
+    top: -4vh;
+    bottom: 1vh;
+    right: 0;
+    width: 100vw;
+    height: 107vh;
+    background: rgb(240, 240, 240);
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    margin: 0 !important;
+    
+  }
+
+ 
+
+  .nav{
+    visibility: hidden;
+  }
+
+  .navList.show{
+    visibility: visible;
+  }
+
+  .mobile-menu.show .line1{
+    transform: rotate(-45deg) translate(-9px, 8px);
+  }
+
+  .mobile-menu.show .line2{
+    opacity: 0;
+  }
+
+  .mobile-menu.show .line3{
+    transform: rotate(-136deg) translate(5px, 5px);
+  }
+
+  .mobile-menu{
+    cursor: pointer;
+    display: initial;
+    right: 0;
+    position: absolute;
+    z-index: 3;
+    margin-right: 10px;
+  }
+
+  .mobile-menu.show{
+    position: fixed;
+  }
+
+
+  .navList li {
+    margin-top: 50px !important;
+  }
+
+  .navList.show li a{
+    color: rgba(0, 0, 0, 0.842) !important;
+  }
+
+  .navList li a{
+    font-size: 25px !important;
+    color: white !important;
+  }
+
+  .navList li span{
+    font-size: 30px !important;
+  }
+  
+}
+
+
+@media (max-width: 800px){
+
+  .title-pedidos{
+    text-align: center;
+  }
+
+  .table thead {
+    display: none !important;
+  }
+  
+  .table, .table tbody, .table tr, .table td{
+    display: block;
+    max-width: 100%;
+  }
+
+  .item th{
+  border: solid 1px rgba(97, 94, 94, 0.26) !important;
+  }
+
+  .info-request th{
+    padding: 16px;
+    
+  }
+
+  .table tr td, .table tr th{
+    border-left: solid 1px rgb(97, 94, 94);
+    border-right: solid 1px rgb(97, 94, 94);
+    padding-right: 5px;
+  }
+
+  .table tbody tr td:nth-child(1){
+    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  .table tr{
+    margin-bottom: 15px;
+  }
+
+  .table td{
+    text-align: right;
+    
+  }
+
+  .pedidos{
+    max-width: 44rem;
+  }
+
+  .table{
+    padding: 15px;
+  }
+
+  .table td::before{
+   content: attr(data-label);
+  position: absolute;
+  left: 0;
+  padding-left: 28px;
+  font-size: 15px;
+  font-style: bold;
+    
+  }
+
+
+  }
+
+  @media (max-width: 690px){
+    .relatorio{
+      max-width: 80%;
+    }
+
+    .Info{
+      flex-wrap: wrap;
+    }
+
+    .vendas-semanal{
+      max-width: 76%;
+      margin: 35px auto;
+    }
+
+    .p1::before{
+      opacity: 0;
+    }
+
+    .p2::before{
+      opacity: 0;
+    }
+
+    .vendas-ano{
+      visibility: hidden;
+      position: absolute;
+    }
+
+    .vendas{
+      display: block;
+      text-align: center;
+      padding-top: 5px;
+    }
+
+    .vendas h2{
+      font-size: 18px;
+    }
+
+    .info-vendas p {
+      font-size: 14px;
+    }
+
+    .title-pedidos{
+      font-size: 13px;
+    }
+
+    .title-h2 h2{
+      font-size: 14px;
+    }
+
+    .relatorio{
+      width: 100%;
+      height: 11%;
+      overflow: scroll;
+      max-width: 100%;
+    }
+
+    .relatorio-canvas{
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+    }
+
+    .vendas-semanal{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .card1{
+      margin-right: 0;
+     overflow: scroll;
+    }
+
+    .card2{
+      overflow: scroll;
+    }
+
+    .card1 .vendas-canvas{
+      width: 100%;
+      height: 83%;
+    }
+
+    .info-vendas{
+      gap: 0;
+
+    }
+
+    .card2 .vendas-canvas{
+      width: 100%;
+      height: 85%;
+    }
+
+    .pesquisar input {
+      width: 163px;
+    }
+
+    .table tr td, .info-request th{
+      font-size: 12px !important;
+    }
+    
+    
+  }
+
+  @media(max-width: 470px){
+
+
+    .table tr{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    
+    }
+
+    .table tr td{
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+    }
+
+    
+    .table tbody{
+      display: flex !important;
+      flex-direction: column;
+      width: 100% !important;
+    }
+
+    .table td::before{
+      position: static;
+      padding: 0;
+      display: block;
+     text-align: center;
+     margin-bottom: 2px;
+      
+    }
+
+    .card-info{
+      justify-content: center;
+    }
+  }
+
+  
+  
+
+
+
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="estrutura">
+    <header class="header">
+      <div class="container-nav">
+        <div class="logo">
+          <h1>TechBlue</h1>
+        </div>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <nav class="nav">
+          <ul class="navList">
+          <li><span class="icon-pie-chart"></span><a href="#DashBoard">Dashboard</a></li>
+          <li><span class="icon-file-text2"></span><a href="#pedidos">Pedidos</a></li>
+          <li><span class="icon-cart"></span><a href="#produtos">Produtos</a></li>
+          <li><span class="icon-users"></span><a href="#clientes">Clientes</a></li>
+          <li><span class="icon-coin-dollar"></span><a href="#financeiro">Financeiro</a></li>
+          </ul>
+        </nav>
+
+        <div class="icon-circle-up">
+           <span>Sair</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="pesquisar">
+        <div class="search-container"><input   type="search" name="" id="search" placeholder="🔎 Pesquisar"></div>
+
+        <div class="user-notification">
+          <div class="icon-bell"></div>
+          <img src="imagens/72.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="Info grid">
+        <div class="card">
+          <div class="card-info">
+            <div class="icon-home"></div>
+            <div class="title-h2">
+              <h2>Unidades Registradas</h2>
+            </div>
+          </div>
+          
+            <p>1</p>
+         
+        </div>
+
+        <div class="card">
+          <div class="card-info">
+            <div class="icon-users"></div>
+            <div class="title-h2">
+              <h2>Novos Clientes</h2>
+            </div>
+          </div>
+          <p>104</p>
+        </div>
+
+        <div class="card">
+          <div class="card-info">
+            <div class="icon-file-text2"></div>
+            <div class="title-h2">
+              <h2>Vendas Realizadas</h2>
+            </div>
+          </div>
+          <p>7270</p>
+        </div>
+
+        <div class="card">
+          <div class="card-info">
+            <div class="icon-library"></div>
+            <div class="title-h2">
+              <h2>Lucro Liquido (Geral)</h2>
+            </div>
+          </div>
+          <p >R$ 427.300.50</p>
+        </div>
+      </div>
+
+      <div class="relatorio">
+        <div class="vendas">
+          <h2>Relatorio de Vendas</h2>
+          <div class="vendas-ano">
+            <div class="teste">
+              <p class="p1">vendas de 2020</p>
+            </div>
+            <p class="p2">Vendas de 2021</p>
+          </div>
+        </div>
+          <div class="relatorio-canvas">
+           <canvas id="myChart"></canvas>
+        </div>
+
+      </div>
+
+      <div class="vendas-semanal">
+        <div class="card1">
+          <div class="info-vendas">
+            <p>R$ 6.000,00</p>
+            <p>Relatório de Vendas Semanal</p>
+          </div>
+          <div class="vendas-canvas">
+            <canvas id="myChart2"></canvas>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="info-vendas">
+            <p>R$ 27.000,00</p>
+            <p>Relatório de Vendas Mensal</p>
+          </div>
+          <div class="vendas-canvas">
+           <canvas id="myChart3"></canvas>
+              </div>
+            </div>
+          </div>
+       
+
+      <div class="pedidos">
+        <div class="title-pedidos">
+          <h2>Ultimos pedidos realizados</h2>
+        </div>
+        <table class="table" rules=none>
+            <thead>
+              <tr class="info-request item">
+                <th class="th">Nome</th>
+                <th>E-mail</th>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Nº do Pedido</th>
+                <th>Método de Pagamento</th>
+                <th></th>
+                <th></th>
+              </tr>
+              
+            </thead>
+
+          <tbody>
+            <tr class="info-response item">
+              <td  class="td-img"><img src="imagens/25.jpg" alt="">Marcelo Wesley</td>
+              <td data-label="E-mail" class="td-email ">Marcelo_oliscott@hotmail.com</td>
+              <td data-label="Data" class="td-date">30/07/2021</td>
+              <td data-label="Horário" class="td-hour">15:49</td>
+              <td data-label="N° do Pedido">12466</td>
+              <td data-label="Método de Pagamento">Cartão de Crédito Visa</td>
+              <td class="icon-pencil"></td>
+              <td class="icon-bin2"></td>
+            </tr>
+            <tr class="info-response">
+              <td  class="td-img"><img src="imagens/38.jpg" alt="">Ronaldo Ferreira</td>
+              <td data-label="E-mail">Ronaldo_wesley@hotmail.com</td>
+              <td data-label="Data">30/07/2021</td>
+              <td data-label="Horário">14:17</td>
+              <td data-label="N° do Pedido">12465</td>
+              <td data-label="Método de Pagamento">Cartão de Crédito Master Card</td>
+              <td class="icon-pencil"></td>
+              <td class="icon-bin2"></td>
+            </tr>
+            <tr class="info-response">
+              <td class="td-img"> <img src="imagens/42.jpg" alt="">Romulo Costa</td>
+              <td data-label="E-mail">Rumulo_Costa@hotmail.com</td>
+              <td data-label="Data" >29/07/2021</td>
+              <td data-label="Horário" >22:07</td>
+              <td data-label="N° do Pedido" >12464</td>
+              <td data-label="Método de Pagamento" >Boleto Bancário</td>
+              <td  class="icon-pencil"></td>
+              <td  class="icon-bin2"></td>
+            </tr>
+            <tr class="info-response">
+              <td class="td-img"> <img src="imagens/49.jpg" alt="">Claudio Duarte</td>
+              <td data-label="E-mail" >Claudio_Duarte@Gmail.com</td>
+              <td data-label="Data" >29/07/2021</td>
+              <td data-label="Horário" >11:45</td>
+              <td data-label="Nº do pedido" >12463</td>
+              <td data-label="Método de Pagamento" >Cartão De Crédito Master Card</td>
+              <td   class="icon-pencil"></td>
+              <td   class="icon-bin2"></td>
+            </tr>
+            <tr class="info-response">
+              <td  class="td-img"> <img src="imagens/72.jpg" alt=""> José Biriba</td>
+              <td data-label="E-mail" class="td-email ">José_Biriba@hotmail.com</td>
+              <td data-label="Data">29/07/2021</td>
+              <td data-label="Horário">12:22</td>
+              <td data-label="N° do Pedido">12462</td>
+              <td data-label="Método de Pagamento">Paypal</td>
+              <td class="icon-pencil"></td>
+              <td class="icon-bin2"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
