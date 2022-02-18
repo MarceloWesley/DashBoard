@@ -7,7 +7,7 @@ mas nos meus proximos eu pretendo criar com um banco de dados e faze-lo dinamica
 - CSS
 - HTML
 
-## Api Usada
+## Lib Usada
 - [Chart.js](https://www.chartjs.org/docs/latest/api/)
 
 ## Link da Página do Projeto
