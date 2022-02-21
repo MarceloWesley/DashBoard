@@ -117,6 +117,15 @@ menuMobile.addEventListener("click", function () {
 })
 
 
+const links = document.querySelectorAll('nav ul li a')
+
+for (const link of links) {
+  link.addEventListener('click', function () {
+    navList.classList.remove('show')
+    menuMobile.classList.remove('show')
+  })
+}
+
 
 
 

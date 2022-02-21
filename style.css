@@ -67,9 +67,6 @@ cursor: pointer;
   color: var(--techblue);
   }
 
-.icon-circle-up:hover{
-  color: var(--techblue);
-  }
 
 .icon-circle-up span{
   font-size: 25px;
@@ -558,7 +555,7 @@ transition: 0.3s;
   }
 
   .nav{
-    margin: 0 !important;
+    margin: -5px !important;
     width: auto !important;
   }
   .container-nav nav ul li{
@@ -687,6 +684,21 @@ transition: 0.3s;
 
   .navList li span{
     font-size: 30px !important;
+  }
+
+  .icon-bell{
+    transform: rotate(none);
+    transform: none;
+  }
+
+  .icon-bell:hover{
+    transform: none;
+    transform: rotate(none);
+  }
+
+  .user-notification::before{
+    left: 13px;
+    top: 7px;
   }
   
 }
